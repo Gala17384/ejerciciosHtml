@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        var nombre;
+        var fecha = new Date();//creamos el objeto fecha
+        var hora = fecha.getHours();//obtenemos la hora
+        var minutos = fecha.getMinutes();//obtenemos minutos
+
+        nombre = window.prompt("Introduzca su nombre:");
+
+        /*switch (hora){
+            case 12:
+                alert(nombre + " , es mediodia");
+                break;
+            case 19:
+                alert(nombre + " , es por la tarde");
+                break;
+            default:
+                alert(nombre + " , es por la noche")
+        }*/
+
+        switch (true) {
+            case (hora <12):
+                saludo =  "Buenos dias" + nombre;
+                break;
+            case (hora >= 12 && hora < 20):
+                saludo =  "Buenos tardes" + nombre;
+                break;
+            case (hora  >=20):
+                saludo =  "Buenos noches" + nombre;
+                break;
+            default:
+                saludo= "hola" + nombre;
+        }
+
+        //agregar la hora y minutos a la cadena'
+        saludo += " - Son las " + hora + ":" + (minutos < 10 ? '0' : '') + minutos;/* el signo de pregunta es para que si es
+         menor de 10 añada un 0 ( minutos de 0-9) y si no necesita 0 pues no lo pone. Es una operacion ternaria de javascript*/
+        document.writeln(saludo);//esto es una forma de abreviar todo lo anterior (+=)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

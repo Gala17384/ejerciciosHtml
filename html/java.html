@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Alumno(nombre,edad,dni) {
+            this.nombre=nombre;
+            this.edad=edad;
+            this.dni=dni;
+            alert("Creación de un objeto de la clase de Alumno");
+        }
+        Alumno.prototype.nombre="Pepe";
+        Alumno.prototype.edad=9;
+        Alumno.prototype.dni="000000000x";
+        Alumno.prototype.saludaAlumno=function()//definimos el metodo
+        {
+            alert("hola");
+        }
+        var alumno1 = new Alumno ("pepe" );
+        var alumno2 = new Alumno ("Federico",8,"1254821g");
+        var alumno3 = new Alumno ("Carmen",8,"125251158g");
+        alert('El nombre del alumno es: ' + alumno2.nombre + " " + alumno2.dni +" " + alumno2.edad)
+        alumno1.saludaAlumno();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

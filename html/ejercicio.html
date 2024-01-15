@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica JavaScript</title>
+    <script type="text/javascript">
+
+       document.writeln("<h1>Practicando con Java</h1>");
+
+     var ok;//llamo a la variable ok. y aqui gusrado lo que me dice el usuario. 
+       var numero;
+       ok = window.prompt("Introduce 'ok'(sin comillas), si quieres que te diga la tabla de multiplicar de un numero entero que tu elijas");
+       ok = ok.toLowerCase;// convierte las cadenas de mayusculas a minusculas
+      if (ok === "ok") {//por que compara en valor y en tipo
+
+             numero=window.prompt("Introduce un numero entero");
+             // en caso de que se introduzca un numero seguido de punto y numeros. coge solo el numero entero
+             //coge la parte entera del numero para la tabla de multiplicar
+
+             var numero = Math.floor(numero);
+
+             //con la funcion isNaN comprobamos si es un numero
+
+             if (!isNaN(numero)) { // aqui ya es un numero entero
+                var multiplicador = 1;
+                document.writeln("Has elegido la Tabla del " + numero + ":  <br>");
+                //tabla de multiplicar con bucle while
+
+            while (multiplicador <= 10) {
+                //operador multiplicar
+                var resultado = numero * multiplicador;
+                //sacamos por pantalla
+                document.writeln(numero + " x " + multiplicador + " = " + resultado);
+                //salto de linea
+                document.writeln("<br>");
+                multiplicador++; //vamos incrementando
+                //En lugar de multiplicador++; podemos usar:
+                //multiplicador = multiplicador + 1;
+                //multiplicador +=1;
+                }
+            }else{
+            window.alert("valor incorrecto! Recarga y vuelve a intentarlo.");
+        }
+    }else{
+        window.alert("Por fi, introduce 'ok', recarga y vuelve a intentarlo.");
+    }
+        
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        var notaAlumno;
+        notaAlumno = window.prompt("Dime tu nota:");/*window es un objeto,representa la ventana que contiene un documento.Es el recuadradito que sale para escribir.
+         prompt es un cuadro de dialogo con un mensaje que solicita al usuario ingresar algun dato/*
+
+        /*se pone todo junto sumandole el if !IsNaN para que de todas las opciones. Si se quitan las llaves funciona igual
+        if (!isNaN(notaAlumno)){//esto es una instrucción. Es una negacion(No es un numero)entonces saltaria que introduzca un valor correcto
+            if (notaAlumno >= 60){
+                document.writeln("Aprobado");//esto es una sentencia, que es la accion que va a pasar dentro del bucle
+            }else{
+                document.writeln("suspenso");//esto es una sentencia, que es la accion que va a pasar dentro del bucle
+            }
+        }else{
+            document.writeln("Recarga e inteoduce un valor correcto");
+        }*/
+
+
+        /*if (notaAlumno >= 90) //signos siempre juntos por que si no da error.Aqui esta sin llaves y funciona
+                document.writeln ("Sobresaliente");
+            else if (notaAlumno >= 80)
+                document.writeln ("Notable");
+            else if (notaAlumno >= 70 )
+                document.writeln ("Bien");
+            else if (notaAlumno >= 60 )
+                document.writeln ("Suficiente");
+            else 
+                document.writeln ("Suspenso");*/
+
+        if (!isNaN(notaAlumno)) { // ponemos la negacion. si se introduce un valor que no sea numero
+            if (notaAlumno >= 90) {
+                document.writeln ("Sobresaliente");
+            }else if (notaAlumno >= 80) {
+                document.writeln ("Notable");
+            }else if (notaAlumno >= 70 ) {
+                document.writeln ("Bien");
+            }else if (notaAlumno >= 60 ) {
+                document.writeln ("Suficiente");
+            }else 
+                document.writeln ("Suspenso");        
+        } else {
+            document.writeln("Recarga e introduce un valor correcto");
+        }
+        
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

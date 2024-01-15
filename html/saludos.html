@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type ="text/javascript">
+
+       /*como la funcion ya la tiene creada javascrip, no hay que crearla y directamente creamos el objeto y utilizamos los metodos
+       objeto: fecha
+       */
+
+        var nombre;
+        var fecha = new Date();// le ponemos new para crear un objeto. Date siempre con mayuscula la primera.El objeto se llama fecha
+        var hora = fecha.getHours();// la hora es de 0-23
+        var minutos = fecha.getMinutes();// los minutos de 0-59
+
+        nombre = window.prompt("Introduzca su nombre: ");// pedira un dato que lo guardara en nombre. Da el nombre y saluda
+
+        /*if (hora < 12)
+            document.writeln("Buenos días 🌝 " + nombre);
+
+        if (hora >= 12)
+            document.writeln("Buenos tardes 🌞 " + nombre);
+
+        if (hora >=20)
+            document.writeln("Buenos noches 🌚" + nombre);*/
+
+
+
+        if (hora < 12)
+            document.writeln("Buenos días 🌝 " + nombre);
+
+        else if (hora >= 12 && hora <20)//operador and (se cumplen las dos, que es mas tarde de las 12 y mas pronto que las 8)
+            document.writeln("Buenos tardes 🌞 " + nombre);
+
+        else //utilizar else para el ultimo caso
+            document.writeln("Buenos noches 🌚" + nombre);
+
+        document.writeln("<br>");
+
+        document.writeln(nombre + " son las: " + hora + ":" + minutos + "h" + ", bienvenido/a a mi pagina web.");
+
+        
+
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

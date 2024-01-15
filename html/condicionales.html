@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Condicionales</title>
+    <script type="text/javascript">
+        //var nombre;
+        // nombre = window.promt("");
+        var datoEntrada;
+
+        datoEntrada = window.prompt("Dime un número entero:");
+        /*if((datoEntrada % 2 == 0)) { //estamos comparando solo su valor. Si la división es =0 es par, si no, es impar. ==compara solo el valor
+            document.writeln("es un número par");
+        }else {
+            document.writeln("no es un número par2");
+        }*/
+        //repetimos el ejercicio con una función
+
+        function esPar(numero) {
+            return numero % 2 === 0;
+        }
+
+
+        /*if (esPar(datoEntrada)){
+            document.writeln("es un numero par");
+        }else{
+            document.writeln("no es un numero par");
+        }*/
+
+
+
+        //datoEntrada = parseInt (datoEntrada);
+        if (!isNaN(datoEntrada)) {//iaNaN es una negacion. (no es un numero)
+            if (esPar(datoEntrada)) {
+                document.writeln("es un número");
+            } else {
+                document.writeln("no es un número par");
+            }
+        } else {
+            document.writeln("no es un número, por favor, introduce un número");
+        }
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
