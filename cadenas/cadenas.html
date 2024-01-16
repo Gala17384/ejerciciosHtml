@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+        //ejemolos de cadenas
+
+        var cadena = "Rincón de la Victoria ";
+        //ver longitud de la cadena se usa
+        document.writeln(cadena.length);
+        //fragmento de la cadena es decir muestra una parte de la cadena
+        document.writeln("<br>" + cadena.substring (10));
+        document.writeln("<br>" + cadena.substring (0,10));
+        //para mostrar un caracter
+        document.writeln("<br>" + cadena.charAt(5));
+        //unir dos cadenas
+        var cadena2 = " Malaga";
+        document.writeln("<br>" + cadena.concat("Malaga"));
+        //indesoft
+        document.writeln("<br>" + cadena.indexOf("Rincón")); //devuelve 0 poque e sta dentro de esa cadena
+        document.writeln("<br>" + cadena.indexOf("Victoria" , 0)); //devuelve 0
+        document.writeln("<br>" + cadena.indexOf("Malaga")); //devuelve -1 por que no esta dentro de esa cadena
+        //replace
+        document.writeln("<br>" + cadena.replace("Rincón" , "calle"));//muestra "calle de la victoria"
+        //split - division de cadena en un array de cadena
+        document.writeln("<br>" + cadena.split("  "));// devuelve un array de 4 elementos
+        document.writeln("<br>" + cadena.split(" a "));// devuelve un array teniendo en cuenta las letras "a"
+        document.writeln("<br>" + cadena.split(" , "));// devuelve un array teniendo en cuenta las comas
+        document.writeln("<br>" + cadena.split(" "));// devuelve un array formado por las letras d ela cadena
+        //toUpperCase - devuelve la cadena mayuscula
+        document.writeln("<br>" + cadena.toUpperCase()); //devuekve RINCON DE LA VICTORIA
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
